@@ -22,13 +22,23 @@ Follow the steps below to create a JAX-RS REST API using Spring Boot:
 Step 1: Create a new Spring Boot project
 
 You can create a new Spring Boot project using:
-  1. Spring Initializr web-based tool or 
-  2. Spring Boot CLI (Command Line Interface)
+  1. Spring Initializr web-based tool
   
- ```
- spring init --dependencies=web <<project_name>>
-      
- ```
+  Make sure the maven file should have spring-boot-starter-jersey
+  ```   
+  <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-jersey</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency> 
+  ```
+  2. Spring Boot CLI (Command Line Interface)
+  ```
+  spring init --dependencies=web <<project_name>>
+  ```
      
 Step 2: Create a JAX-RS Resource
 In JAX-RS, a resource represents a RESTful endpoint that handles HTTP requests and responses. 
