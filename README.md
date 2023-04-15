@@ -41,6 +41,7 @@ You can create a new Spring Boot project using:
   ```
      
 Step 2: Create a JAX-RS Resource
+
 In JAX-RS, a resource represents a RESTful endpoint that handles HTTP requests and responses. 
 To create a JAX-RS resource in your Spring Boot project, you can follow these steps:
 
