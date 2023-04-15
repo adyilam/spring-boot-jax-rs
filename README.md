@@ -64,4 +64,15 @@ import javax.ws.rs.core.MediaType;
     }
 ```
 
-Step 3:
+Step 3: Jersey Configuration
+Inorder to access JAX-RS resource (productResource.java) from spring boot application which include Jersey dependency. We need to register the resourse as jersey resource. @Component annotation in the Config class enables the class to be registered during spring boot scan the java class in the resource folder.
+```
+@Component
+public class Config extends ResourceConfig 
+{
+  public Config() 
+  {
+    register(ProductResource.class);
+  }
+}
+```
