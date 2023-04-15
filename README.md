@@ -77,3 +77,13 @@ public class Config extends ResourceConfig
   }
 }
 ```
+Step 4: Finally, Spring boot application extends SpringBootServletInitializer
+```
+@SpringBootApplication
+public class SpringBootJerseyApplication extends SpringBootServletInitializer {
+
+    public static void main(String[] args) {
+        new SpringBootJerseyApplication().configure(new SpringApplicationBuilder(SpringBootJerseyApplication.class)).run(args);
+    }
+}
+```
