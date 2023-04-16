@@ -47,7 +47,7 @@ public class ProductResource {
             productDB.put(product.getProductId(), product);
             return Response.status(201).build();
         }
-        return Response.status(400).entity(new ProductErrorHandler("Provide all the inputs", 400, "Please provide all mandatory inputs")).build();
+        return Response.status(400).entity(new ProductErrorHandler("Provide all the mandatory inputs", 400, "Please provide all mandatory inputs")).build();
     }
 
     @GET
