@@ -87,3 +87,13 @@ public class SpringBootJerseyApplication extends SpringBootServletInitializer {
     }
 }
 ```
+#Usage
+
+The following endpoints are available in the API:
+```
+GET  /products: retrieves a list of all products.
+GET  /products/{id}: retrieves a single product by ID.
+POST /products: creates a new product.
+PUT /products/{id}: updates an existing product by ID.
+DELETE /products/{id}: deletes a product by ID.
+```
