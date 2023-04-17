@@ -87,7 +87,7 @@ public class SpringBootJerseyApplication extends SpringBootServletInitializer {
     }
 }
 ```
-#Usage
+# Usage
 
 The following endpoints are available in the API:
 ```
