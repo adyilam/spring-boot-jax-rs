@@ -16,19 +16,6 @@ import java.util.Map;
 public class ProductResource {
     private static Map<Integer, Product> productDB = new HashMap<>();
 
-    static {
-        Product product1 = new Product();
-        product1.setProductId(1);
-        product1.setName("Computer");
-
-        Product product2 = new Product();
-        product2.setProductId(2);
-        product2.setName("TV");
-
-        productDB.put(product1.getProductId(), product1);
-        productDB.put(product2.getProductId(), product2);
-    }
-
     @GET
     @Produces("application/json")
     public Products getAllProducts() {
@@ -89,5 +76,18 @@ public class ProductResource {
             return Response.status(200).build();
         }
         return Response.status(404).entity(new ProductErrorHandler("Record not found with the given Id: " + id, 404, "The requested URL was not found.")).build();
+    }
+
+    static {
+        Product product1 = new Product();
+        product1.setProductId(1);
+        product1.setName("Computer");
+
+        Product product2 = new Product();
+        product2.setProductId(2);
+        product2.setName("TV");
+
+        productDB.put(product1.getProductId(), product1);
+        productDB.put(product2.getProductId(), product2);
     }
 }
