@@ -70,9 +70,9 @@ public class ProductResource {
     @Consumes("application/json")
     @Produces("application/json")
     public Response deleteUser(@PathParam("id") int id) {
-        Product prod = productDB.get(id);
-        if (null != prod) {
-            productDB.remove(prod.getProductId());
+        Product product = productDB.get(id);
+        if (null != product) {
+            productDB.remove(product.getProductId());
             return Response.status(200).build();
         }
         return Response.status(404).entity(new ProductErrorHandler("Record not found with the given Id: " + id, 404, "The requested URL was not found.")).build();
