@@ -58,7 +58,7 @@ public class SpringBootJerseyApplication extends SpringBootServletInitializer {
 }
 ```
 
-## The below code snippet will enable SpringBootJerseyApplication application to act as authorization and resource server
+## Configure the access details in application.properties file of ProductResource API as below
 
 
 
