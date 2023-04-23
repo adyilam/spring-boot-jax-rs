@@ -26,12 +26,39 @@ OAuth2 works by allowing a user to grant access to their data on one website (th
 ## Add OAuth2 for Spring Security (spring-security-oauth2) as a dependency in pom.xml file.
 ```
 <dependency>
-	<groupId>org.springframework.security.oauth</groupId>
-	<artifactId>spring-security-oauth2</artifactId>
+ <groupId>org.springframework.security.oauth</groupId>
+ <artifactId>spring-security-oauth2</artifactId>
 </dependency>
 ```
-## Setup OAuth2 server and Resource server
+## Setup OAuth2 server
 OAuth2 Provider or Authorization server - this would be a diffrent server from the application server where our ProductResource API is exposed. but in our case, ProductResource API server act both as a **resource server** and as **OAUTH provider**
+```
+@EnableAuthorizationServer
+@SpringBootApplication
+public class SpringBootJerseyApplication extends SpringBootServletInitializer {
+
+    public static void main(String[] args) {
+        new SpringBootJerseyApplication().configure(new SpringApplicationBuilder(SpringBootJerseyApplication.class)).run(args);
+    }
+}
+```
+
+## Setup Resource server
+A Resource server an application that protects resource via OAuth token. we can enable our application act as resource server using @EnableResourceServer
+```
+@EnableResourceServer
+@SpringBootApplication
+public class SpringBootJerseyApplication extends SpringBootServletInitializer {
+
+    public static void main(String[] args) {
+        new SpringBootJerseyApplication().configure(new SpringApplicationBuilder(SpringBootJerseyApplication.class)).run(args);
+    }
+}
+```
+
+## The below code snippet will enable SpringBootJerseyApplication application to act as authorization and resource server
+
+
 
 
 
