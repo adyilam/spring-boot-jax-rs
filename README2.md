@@ -20,7 +20,7 @@ OAuth2 works by allowing a user to grant access to their data on one website (th
 8. **Implement refresh tokens:** Access tokens have a limited lifespan, after which they must be refreshed. Refresh tokens are used to obtain a new access token without requiring the user to re-authenticate.
 9. **Secure endpoints:** Finally, it is important to secure your REST API endpoints to ensure that only authorized users can access them. This can be achieved by requiring the presence of an access token in requests to protected endpoints.
 
-## How to Implement OAuth2 Security for a REST API
+## How to Implement OAuth2 Security for ProductResource REST API
 
 1. OAuth2 Provider or Authorization server - 
 
