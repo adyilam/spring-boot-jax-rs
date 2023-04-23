@@ -28,10 +28,12 @@ OAuth2 works by allowing a user to grant access to their data on one website (th
 <dependency>
  <groupId>org.springframework.security.oauth</groupId>
  <artifactId>spring-security-oauth2</artifactId>
+ <version>2.3.8.RELEASE</version>
 </dependency>
 ```
 ## 2. Setup OAuth2 server
-OAuth2 Provider or Authorization server - this would be a diffrent server from the application server where our ProductResource API is exposed. but in our case, ProductResource API server act both as a **resource server** and as **OAUTH provider**
+OAuth2 Provider or Authorization server - this would be a diffrent server from the application server where our ProductResource API is exposed. but in our case, ProductResource API server act both as a **resource server** and as **OAUTH provider** , We used @EnableAuthorizationServer annotation to enable Authorization server.
+
 ```
 @EnableAuthorizationServer
 @SpringBootApplication
@@ -44,7 +46,7 @@ public class SpringBootJerseyApplication extends SpringBootServletInitializer {
 ```
 
 ## 3. Setup Resource server
-A Resource server an application that protects resource via OAuth token. we can enable our application act as resource server using @EnableResourceServer
+A Resource server is an application that protects resource via OAuth token. We can enable our application to act as resource server using **@EnableResourceServer**
 ```
 @EnableResourceServer
 @SpringBootApplication
