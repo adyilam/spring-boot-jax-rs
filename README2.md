@@ -1,7 +1,7 @@
 
 ## OAuth2 Security for ProductResource JAX_RS REST API - README
 
-## This document provides an overview of how to implement OAuth2 security for a REST API.
+This document provides an overview of how to implement OAuth2 security for a REST API.
 
 ## What is OAuth2?
 
