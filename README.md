@@ -4,9 +4,7 @@ This is a basic guide on how to create a JAX-RS (Java API for RESTful Web Servic
 JAX-RS is a Java standard for building RESTful web services, and Spring Boot is a popular Java framework for building scalable 
 and efficient web applications. 
 
-# Note 
-
-Next session, we will configure OAuth2 security in productResource API.
+Note: Next session, we will configure OAuth2 security in productResource API.
 
 This guide assumes that you are familiar with Java, RESTful web services, and have a basic understanding of Spring Boot.
 
