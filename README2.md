@@ -31,7 +31,7 @@ OAuth2 works by allowing a user to grant access to their data on one website (th
 </dependency>
 ```
 ## Setup OAuth2 server and Resource server
-OAuth2 Provider or Authorization server - this would be a diffrent server from the application server where our ProductResource API is exposed. but in our case, ProductResource API server act both as a **resource server** and as **OAUTH provider** 
+OAuth2 Provider or Authorization server - this would be a diffrent server from the application server where our ProductResource API is exposed. but in our case, ProductResource API server act both as a **resource server** and as **OAUTH provider**
 
 
 
