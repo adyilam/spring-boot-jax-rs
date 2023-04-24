@@ -61,8 +61,8 @@ public class SpringBootJerseyApplication extends SpringBootServletInitializer {
 ## Configure the access details in application.properties file of ProductResource API as below
 ```
 #Authentication detail of product resource owner / service producer
-security.user.name=user-name
-security.user.password=user-password
+security.user.name=gust
+security.user.password=gust
 
 # Authentication detail of service consumer
 security.oauth2.client.clientId=clientId
@@ -76,8 +76,18 @@ security.oauth2.client.scope=openid
 **The Authorization Code grant type** is used by confidential and public clients to exchange an authorization code for an access token. After the user returns to the client via the redirect URL, the application will get the authorization code from the URL and use it to request an access token.
 
 
-
-
+## 4. Running OAuth request
+To access the ProductResource, first get the access token from the Authorization server and Excecute the request using tge given access token. 
+1. Getting an access token from Authorization server. configure the client authentication detail which are user-name and password in the basic authentication on postman / soapUI.
+ ```
+ POST: http://localhost:8080/oauth/tokel
+ Authorization:
+ Type --------------   Basic Auth
+ username ----------   gust
+ password ----------   gust
+ 
+ ```
+3. Excecute the request using access token.
 
 ## Conclusion
 
