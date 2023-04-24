@@ -61,12 +61,12 @@ public class SpringBootJerseyApplication extends SpringBootServletInitializer {
 ## Configure the access details in application.properties file of ProductResource API as below
 ```
 #Authentication detail of product resource owner / service producer
-security.user.name=user
-security.user.password=password
+security.user.name=javaFeature
+security.user.password=javaFeature
 
 # Authentication detail of service consumer
-security.oauth2.client.clientId=clientId
-security.oauth2.client.clientSecret=clientSecret
+security.oauth2.client.clientId=javaFeature
+security.oauth2.client.clientSecret=test@#23
 
 # Enables a client application to obtain authorized access to protected ProductResource API.
 security.oauth2.client.authorized-grant-type=authorization_code,refresh_token,password
@@ -83,8 +83,8 @@ To access the ProductResource, first get the access token from the Authorization
  POST: http://localhost:8080/oauth/token
  Authorization:
  Type: Basic Auth
- username:user
- password:password
+ username:javaFeature
+ password:javaFeature
  
  ```
 3. Excecute the request using access token.
