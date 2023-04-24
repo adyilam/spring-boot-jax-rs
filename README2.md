@@ -80,7 +80,7 @@ security.oauth2.client.scope=openid
 To access the ProductResource, first get the access token from the Authorization server and Excecute the request using tge given access token. 
 1. Getting an access token from Authorization server. configure the client authentication detail which are user-name and password in the basic authentication on postman / soapUI.
  ```
- POST: http://localhost:8080/oauth/tokel
+ POST: http://localhost:8080/oauth/token
  Authorization:
  Type: Basic Auth
  username:user
