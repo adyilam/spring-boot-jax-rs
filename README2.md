@@ -63,9 +63,11 @@ public class SpringBootJerseyApplication extends SpringBootServletInitializer {
 #Authentication detail of product resource owner / service producer
 security.user.name=user-name
 security.user.password=user-password
+
 # Authentication detail of service consumer
 security.oauth2.client.clientId=clientId
 security.oauth2.client.clientSecret=clientSecret
+
 # Enables a client application to obtain authorized access to protected ProductResource API.
 security.oauth2.client.authorized-grant-type=authorization_code,refresh_token,password
 security.oauth2.client.scope=openid
