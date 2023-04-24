@@ -59,8 +59,19 @@ public class SpringBootJerseyApplication extends SpringBootServletInitializer {
 ```
 
 ## Configure the access details in application.properties file of ProductResource API as below
+```
+#Authentication detail of product resource owner / service producer
+security.user.name=user-name
+security.user.password=user-password
+# Authentication detail of service consumer
+security.oauth2.client.clientId=clientId
+security.oauth2.client.clientSecret=clientSecret
+# Enables a client application to obtain authorized access to protected ProductResource API.
+security.oauth2.client.authorized-grant-type=authorization_code,refresh_token,password
+security.oauth2.client.scope=openid
+```
 
-
+**The Authorization Code grant type** is used by confidential and public clients to exchange an authorization code for an access token. After the user returns to the client via the redirect URL, the application will get the authorization code from the URL and use it to request an access token.
 
 
 
