@@ -5,9 +5,9 @@ This document provides an overview of how to implement OAuth2 security for a RES
 
 ## What is OAuth2?
 
-OAuth2 is an authorization framework that allows third-party applications to access user data from a server. It builds upon the original OAuth protocol, adding additional security measures and simplifying the authorization process.
+**OAuth2** is an authorization framework that allows third-party applications to access user data from a server. It builds upon the original OAuth protocol, adding additional security measures and simplifying the authorization process.
 
-OAuth2 works by allowing a user to grant access to their data on one website (the "OAuth2 provider") to another website (the "OAuth2 consumer"). This is achieved through the exchange of tokens, including access tokens and refresh tokens.
+**OAuth2** works by allowing a user to grant access to their data on one website (the "OAuth2 provider") to another website (the "OAuth2 consumer"). This is achieved through the exchange of tokens, including access tokens and refresh tokens.
 
 ## Implementing OAuth2 security for a REST API involves several steps:
 
